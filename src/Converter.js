@@ -14,27 +14,24 @@ export default class {
     $('button').off('click');
     
     // define html 
-    let html = '';
-    html += '<table>';
-    html += ' <tr>';
-    html += '   <td>EUR</td>';
-    html += '   <td>&nbsp;</td>';
-    html += '   <td>USD</td>';
-    html += ' </tr>';
-    html += ' <tr>';
-    html += '   <td><input id="EUR" /></td>';
-    html += '   <td>';
-    html += '     <button id="convertEURtoUSD">>>></button><br>';
-    html += '     <button id="convertUSDtoEUR"><<<</button>';
-    html += '   </td>';
-    html += '   <td><input id="USD" /></td>';
-    html += ' </tr>';
-    html += '</table>';
+		let html = `
+				<table>
+				 <tr>
+					<td>EUR</td>
+					<td>&nbsp;</td>
+					<td>USD</td>
+				</tr>
+				<tr>
+					<td><input id="EUR" value="${this.EUR}"/></td>
+					<td>
+						<button id="convertEURtoUSD">>>></button><br>
+						<button id="convertUSDtoEUR"><<<</button>
+					</td>
+					<td><input id="USD" value="${this.USD}" /></td>
+			 </tr>
+			</table>`;
+
     rootElement.innerHTML = html;
-    
-    // set field values
-    $('#EUR').val(this.EUR);
-    $('#USD').val(this.USD);
     
     // attach event listeners
     $('#convertEURtoUSD').on('click', function() {
