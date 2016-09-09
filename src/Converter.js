@@ -17,7 +17,7 @@ export default class {
     let html = `
       <table>
         <tr>
-					<td>EUR</td>
+          <td>EUR</td>
           <td>&nbsp;</td>
           <td>USD</td>
         </tr>
@@ -30,7 +30,7 @@ export default class {
           <td><input id="USD" value="${this.USD}" /></td>
        </tr>
       </table>
-		`;
+    `;
 
     rootElement.innerHTML = html;
     
