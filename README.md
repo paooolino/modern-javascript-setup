@@ -5,7 +5,7 @@ https://medium.com/@paooolino/a-modern-javascript-project-setup-b7842955d1d3
 
 ## usage
 
-  npm install
-  npm run build
+    npm install
+    npm run build
   
 The compiled source is in the build/ folder.
