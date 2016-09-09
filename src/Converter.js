@@ -14,22 +14,22 @@ export default class {
     $('button').off('click');
     
     // define html 
-		let html = `
-				<table>
-				 <tr>
-					<td>EUR</td>
-					<td>&nbsp;</td>
-					<td>USD</td>
-				</tr>
-				<tr>
-					<td><input id="EUR" value="${this.EUR}"/></td>
-					<td>
-						<button id="convertEURtoUSD">>>></button><br>
-						<button id="convertUSDtoEUR"><<<</button>
-					</td>
-					<td><input id="USD" value="${this.USD}" /></td>
-			 </tr>
-			</table>`;
+    let html = `
+        <table>
+         <tr>
+          <td>EUR</td>
+          <td>&nbsp;</td>
+          <td>USD</td>
+        </tr>
+        <tr>
+          <td><input id="EUR" value="${this.EUR}"/></td>
+          <td>
+            <button id="convertEURtoUSD">>>></button><br>
+            <button id="convertUSDtoEUR"><<<</button>
+          </td>
+          <td><input id="USD" value="${this.USD}" /></td>
+       </tr>
+      </table>`;
 
     rootElement.innerHTML = html;
     
